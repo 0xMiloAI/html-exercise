@@ -1,0 +1,41 @@
+<style>
+    .shixian{
+        border-style: solid;
+    }
+    .dianzhuang{
+        border-style: dotted;
+    }
+    .xuxian{
+        border-style: dashed;
+    }
+    .shuangxian{
+        border-style: double;
+    }
+    .red{
+        border-style: solid;
+        border-color: red;
+    }
+    .danxiang{
+        width: 150px;
+        height: 150px;
+        border-top-style: solid;
+        border-top-color: aqua;
+        border-top-width: 50px;
+        background-color: lightgrey;
+    }
+</style>
+<div class="solid">实线</div>
+<div class="dotted">点状</div>
+<div class="dashed">虚线</div>
+<div class="double">双线</div>
+<!--可以看到，块级元素div默认是占用100%的宽度
+常见的块级元素有div h1 p 等-->
+<!--而内联元素span的宽度由其内容的宽度决定
+常见的内联元素有 a b strong i input 等-->
+<div class="red">红色实线边框</div>
+<span class="red">红色实线边框</span>
+<!--还可通过border-width来设置边框宽度-->
+<!--直接border然后放一起就行-->
+<div class="danxiang">只有上面有边框</div>
+<!--同时还可以左边框和有、右边框
+当有交界的边同时出现边框的时候，就会以倾斜的形式表现交界线。-->

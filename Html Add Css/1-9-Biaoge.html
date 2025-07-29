@@ -1,0 +1,49 @@
+<style>
+    table.t1{
+      table-layout:automatic;
+    }
+     
+    table.t2{
+      table-layout:fixed;
+    }
+    table.t3{
+  border-collapse:separate;
+}
+ 
+table.t4{
+   border-collapse:collapse;
+}
+     
+    </style>
+     <!--属性:table-layout
+automatic; 单元格的大小由td的内容宽度决定
+fixed; 单元格的大小由td上设置的宽度决定-->
+    <table class="t1" border="1" width="100%">
+       <tr>
+          <td width="10%">abcdefghijklmnopqrstuvwxyz</td>
+          <td width="90%">abc</td>
+       </tr>
+    </table>
+     
+    <table class="t2" border="1" width="100%">
+       <tr>
+          <td width="50px">abcdefghijklmnopqrstuvwxyz</td>
+          <td >abc</td>
+       </tr>
+    </table>
+    <table class="t3" border="1" width="200px">
+        <tr>
+           <td width="50%">边框分离</td>
+           <td width="50%">边框分离</td>
+        </tr>
+     </table>
+      
+     <br/>
+     <br/>
+      
+     <table class="t4" border="1" width="200px">
+        <tr>
+           <td width="50%">边框合并</td>
+           <td width="50%">边框合并</td>
+        </tr>
+     </table>
