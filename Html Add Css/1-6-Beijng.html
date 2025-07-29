@@ -1,0 +1,53 @@
+<style>
+    p.gray {background-color: gray;}
+    h3 {background-color: darkseagreen;}
+</style>
+<style>
+    div#test
+    {
+        background-image: url('background.jpg');
+        width: 300px;
+        height: 400px;
+    }
+</style>
+<style>
+    div#norepeat
+      {
+        background-image:url('background_small.jpg');
+        width:200px;
+        height:100px;
+        background-repeat: no-repeat;
+      }
+     
+    div#repeat-x
+      {
+        background-image:url('background_small.jpg');
+        width:200px;
+        height:100px;
+        background-repeat: repeat-x;
+      }
+    </style>
+<style>
+    div#contain
+      {
+        background-image:url('background_small.jpg');
+        width:200px;
+        height:100px;
+        background-size: contain;
+      }
+    </style>
+<p class="gray">灰色</p>
+<h3>深绿色</h3>
+<div id="test">
+    有背景图的，牛逼不
+</div>
+<div id="norepeat">
+    背景不重复
+  </div>
+   
+  <div id="repeat-x">
+    背景水平重复
+  </div>
+  <div id="contain">
+    背景平铺，通过拉伸实现，会有失真
+ </div>
