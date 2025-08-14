@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 350px;
+            margin: auto;
+        }
+        #text{
+            width: 340px;
+            height: 200px;
+            font-size: 1.3em;
+            text-indent: 2em;
+            padding-top: 3px;
+        }
+        #buttonCreate{
+            width: 348px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><input type="text" readonly="true" value="地名："></td>
+            <td><input id="i1" type="text" value="浙江"></td>
+        </tr>
+        <tr>
+            <td><input type="text" readonly="true" value="公司类型："></td>
+            <td><input id="i2" type="text" value="互联网公司"></td>
+        </tr>
+        <tr>
+            <td><input type="text" readonly="true" value="公司名称："></td>
+            <td><input id="i3" type="text" value="阿里九九"></td>
+        </tr>
+        <tr>
+            <td><input type="text" readonly="true" value="老板姓名："></td>
+            <td><input id="i4" type="text" value="牛风"></td>
+        </tr>
+        <tr>
+            <td><input type="text" readonly="true" value="money："></td>
+            <td><input id="i5" type="text" value="一万"></td>
+        </tr>
+        <tr>
+            <td><input type="text" readonly="true" value="产品："></td>
+            <td><input id="i6" type="text" value="贴膜"></td>
+        </tr>
+        <tr>
+            <td><input type="text" readonly="true" value="价格计量单位："></td>
+            <td><input id="i7" type="text" value="百"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="buttonCreate" onclick="writeText()">生成</button></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea id="text" type="text" readonly="true" placeholder="正在准备中。。。"></textarea>
+ 
+            </td>
+        </tr>
+    </table>
+    <script>
+        function writeText(){
+            var i1 = document.getElementById("i1").value;
+            var i2 = document.getElementById("i2").value;
+            var i3 = document.getElementById("i3").value;
+            var i4 = document.getElementById("i4").value;
+            var i5 = document.getElementById("i5").value;
+            var i6 = document.getElementById("i6").value;
+            var i7 = document.getElementById("i7").value;
+            var str = i1+"最大"+i2+i3+"倒闭了，王八蛋老板"+i4+"吃喝嫖赌，欠下了"+i5+"个亿，带着他的小姨子跑了!我们没有办法，拿着"+i6+"抵工资!原价都是一"+i7+"多、两"+i7+"多、三"+i7+"多的贴膜，现在全部只卖二十块，统统只要二十块!"+i4+"王八蛋，你不是人!我们辛辛苦苦给你干了大半年，你不发工资，你还我血汗钱，还我血汗钱!"
+            document.getElementById("text").value = str;
+        }
+    </script>
+</body>
+</html>
