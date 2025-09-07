@@ -1,0 +1,51 @@
+<style>
+    .margin{
+        border:1px solid red;
+        background-color:blueviolet;
+        margin:10px;
+        display:inline-block; /* 关键点 */
+    }
+    .normal{
+        border:1px solid red;
+        background-color:blueviolet;
+        display:inline-block; /* 为了公平对比，也写上 */
+    }
+</style>
+
+<span class="normal">
+    无外边距的span
+</span>
+<span class="margin">
+    有外边距的span
+</span>
+<br>
+<span class="normal">
+    无外边距的span
+</span>
+<span class="margin">
+    有外边距的span
+</span>
+<!--👉内联元素（span、a、strong 等）上下 margin 不起作用。
+👉 想要上下 margin 有效，就要让它们变成 block 或 inline-block-->
+<style>
+    .box{
+        width:100px;
+        padding:10px;
+        margin:10px;
+    }
+    div{
+        border:1px solid red;
+        
+    }
+</style>
+<div>
+    其他元素
+</div>
+<div class="box">
+    内容宽度100px <br><br>
+    内边距：10px <br> <br>
+    外边距：10px <br>
+</div>
+<div>
+    其他元素
+</div>
